@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body bgcolor="#a9a9a9">
+<!------<h1 align="center"> Tourism  Paschim Medinipur</br>
+Jangalmahal
+
+</h1>------>
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+
+<script type="text/javascript" src="../js/jssor.js"></script>
+<script type="text/javascript" src="../js/jssor.slider.js"></script>
+<div align="center">
+<script>
+
+    jQuery(document).ready(function ($) {
+        var options = {
+            $AutoPlay: true,
+            $AutoPlaySteps: 1,
+            $AutoPlayInterval: 4000,
+            $PauseOnHover: 1,
+            $Loop: 1,
+            $ArrowKeyNavigation: true,
+            $SlideDuration: 500,
+            $MinDragOffsetToSlide: 20,
+            $SlideSpacing: 5,
+            $DisplayPieces: 1,
+            $ParkingPosition: 0,
+            $UISearchMode: 1,
+            $PlayOrientation: 1,
+            $DragOrientation: 3,
+
+            $ThumbnailNavigatorOptions:
+            {
+                $Class: $JssorThumbnailNavigator$,
+                $ChanceToShow: 2,
+                $Loop: 2,
+                $AutoCenter: 3,
+                $Lanes: 1,
+                $SpacingX: 4,
+                $SpacingY: 4,
+                $DisplayPieces: 4,
+                $ParkingPosition: 0,
+                $Orientation: 2,
+                $DisableDrag: false
+            }
+        };
+
+        var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+
+        function ScaleSlider() {
+            var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                        if (parentWidth) {
+                var sliderWidth = parentWidth;
+                sliderWidth = Math.min(sliderWidth,2000);
+                jssor_slider1.$ScaleWidth(sliderWidth);
+            }
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+        ScaleSlider();
+
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+
+    });
+</script>
+</div>
+
+<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 810px; height: 300px; background: #000; overflow: hidden; ">
+
+
+    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+        <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+        </div>
+        <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+        </div>
+    </div>
+    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
+            overflow: hidden;">
+        <div>
+            <img u="image" src="../img/photography/001.jpg" style="height: 100%" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-001.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/002.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-002.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/003.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-003.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/004.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-004.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/005.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-005.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/006.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-006.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/007.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-007.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/008.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-008.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/009.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-009.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/010.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-010.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/011.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-011.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/012.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-012.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/013.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-013.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/014.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-014.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/015.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-015.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/016.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-016.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/017.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-017.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/018.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-018.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/019.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-019.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/020.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-020.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/021.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-021.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/022.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-022.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/023.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-023.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/024.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-024.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/025.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-025.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/026.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-026.jpg" /><div class="t">Paschim Medinipur Official</div>
+                <div class="c">Paschim Medinipur Official</div>
+            </div>
+        </div>
+        <div>
+            <img u="image" src="../img/photography/027.jpg" />
+            <div u="thumb">
+                <img class="i" src="../img/photography/thumb-027.jpg" /><div class="t">Tab Slider</div>
+                <div class="c">Tab slider with auto play options</div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+
+        .jssort11 {
+            align-content: center;
+            position: absolute;
+            width: 200px;
+            height: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .jssort11 .p {
+            align-content: center;
+            position: absolute;
+            width: 200px;
+            height: 69px;
+            background: #181818;
+        }
+
+        .jssort11 .tp {
+            align-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .jssort11 .i, .jssort11 .pav:hover .i {
+            align-content: center;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 60px;
+            height: 30px;
+            border: white 1px dashed;
+        }
+
+        * html .jssort11 .i {
+            width /**/: 62px;
+            height /**/: 32px;
+        }
+
+        .jssort11 .pav .i {
+            border: white 1px solid;
+        }
+
+        .jssort11 .t, .jssort11 .pav:hover .t {
+            align-content: center;
+            position: absolute;
+            top: 3px;
+            left: 68px;
+            width: 129px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: #fc9835;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .jssort11 .pav .t, .jssort11 .p:hover .t {
+            color: #fff;
+        }
+
+        .jssort11 .c, .jssort11 .pav:hover .c {
+            position: absolute;
+            top: 38px;
+            left: 3px;
+            width: 197px;
+            height: 31px;
+            line-height: 31px;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 400;
+            overflow: hidden;
+        }
+
+        .jssort11 .pav .c, .jssort11 .p:hover .c {
+            color: #fc9835;
+        }
+
+        .jssort11 .t, .jssort11 .c {
+            transition: color 2s;
+            -moz-transition: color 2s;
+            -webkit-transition: color 2s;
+            -o-transition: color 2s;
+        }
+
+        .jssort11 .p:hover .t, .jssort11 .pav:hover .t, .jssort11 .p:hover .c, .jssort11 .pav:hover .c {
+            transition: none;
+            -moz-transition: none;
+            -webkit-transition: none;
+            -o-transition: none;
+        }
+
+        .jssort11 .p:hover, .jssort11 .pav:hover {
+            background: #333;
+        }
+
+        .jssort11 .pav, .jssort11 .p.pdn {
+            background: #462300;
+        }
+    </style>
+    <div u="thumbnavigator" class="jssort11" style="left: 605px; top:0px;">
+        <!-- Thumbnail Item Skin Begin -->
+        <div u="slides" style="cursor: default;">
+            <div u="prototype" class="p" style="top: 0; left: 0;">
+                <div u="thumbnailtemplate" class="tp"></div>
+            </div>
+        </div>
+        <!-- Thumbnail Item Skin End -->
+    </div>
+
+</div>
+
+</body>
+</html>
